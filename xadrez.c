@@ -6,7 +6,9 @@
 
  int main() {
     int i = 1;
-  
+    int movimentocompleto = 1; //controlar o movimento em 'L'
+
+  //Nivel Novato - Movimentação de peças
    //movendo a torre 5 casas para a direita
     for (int i = 0; i < 5; i++)
     {
@@ -29,8 +31,18 @@
    i++;
  }
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    //Criando loops aninhados
+   do
+   {
+    for ( int i = 0; i < 2; i++)
+    {
+        printf("Cima\n"); //imprimindo 'cima' duas vezes
+    }
+
+    printf("Direita\n"); //imprimindo direita
+
+   } while (movimentocompleto--);
+
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
